@@ -1,10 +1,11 @@
 ﻿
 namespace _16
 {
-    class OpenWorldMap : Map
+    public class OpenWorldMap : Map
     {
 
         public float Width { get; set; }
-        public float Heighy { get; set; }
+        public float Height { get; set; }
+
     }
 }

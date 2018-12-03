@@ -1,14 +1,22 @@
-﻿
+﻿using System;
+
 namespace _16
 {
-    class Map
+    public class Map
     {
         public string Name { get; set; }
         protected string Filename { get; set; }
 
-        public void PrintPlayerNames()
+        public Map()
         {
 
         }
+
+        public void PrintPlayerNames()
+        {
+            Console.Write("Manel, Prio, Reftyu");
+        }
+
+
     }
 }
