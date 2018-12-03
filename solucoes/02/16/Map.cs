@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _16
 {
@@ -7,14 +8,19 @@ namespace _16
         public string Name { get; set; }
         protected string Filename { get; set; }
 
-        public Map()
-        {
+     //   Player player = new Player(1, "joaquim");
 
+        public Map(string Name, string Filename)
+        {
+            this.Name = Name;
+            this.Filename = Filename;
         }
 
         public void PrintPlayerNames()
         {
-            Console.Write("Manel, Prio, Reftyu");
+
+            foreach (Player player in players)
+                Console.WriteLine(player.Name);
         }
 
 

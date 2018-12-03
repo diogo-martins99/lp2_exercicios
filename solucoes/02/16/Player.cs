@@ -3,27 +3,24 @@
 namespace _16
 {
     class Player
-
     {
-        Map map = new Map();
- 
-        public int ID { get; set; }
-        public string Name { get; set; }
+
+        public int ID { get; }
+        public string Name { get; }
         private double health;
         private double shield;
 
 
-        public Player(int id, string name)
+        public Player(int ID, String Name)
         {
             this.ID = ID;
-            Name = name;
+            this.Name = Name;
             health = 100;
             shield = 0;
         }
 
         public void PrintPlayerNames()
         {
-            map.PrintPlayerNames();
 
         }
 
