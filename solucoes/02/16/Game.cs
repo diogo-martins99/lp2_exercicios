@@ -7,18 +7,13 @@ namespace _16
         internal static int gamesPlayed;
         private int numberOfPlayers;
 
-        Random rand = new Random();
-        Player player = new Player(1, "manel");
+        Map map = new Map();
 
         internal void GameLoop()
         {
-            gamesPlayed = rand.Next(15);
-            numberOfPlayers = rand.Next(30);
-
-            Console.WriteLine($"Foram jogados {gamesPlayed} jogos com " +
-                $"{numberOfPlayers} jogadores. ");
-            Console.WriteLine("Sobreviventes:");
-            player.PrintPlayerNames();
+            Console.WriteLine($"Foram jogados {gamesPlayed = 3} jogos com " +
+                $"{numberOfPlayers = 4} jogadores, os seus nomes são: ");
+            map.PrintPlayerNames();
 
         }
     }
