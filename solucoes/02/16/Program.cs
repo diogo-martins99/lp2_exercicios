@@ -17,7 +17,6 @@ namespace _16
 
             game.GameLoop();
 
-
         }
     }
 }

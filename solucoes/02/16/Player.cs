@@ -3,6 +3,7 @@
 namespace _16
 {
     class Player
+
     {
 
         public int ID { get; }
@@ -10,8 +11,8 @@ namespace _16
         private double health;
         private double shield;
 
+        public Player(int ID, string Name)
 
-        public Player(int ID, String Name)
         {
             this.ID = ID;
             this.Name = Name;
@@ -19,9 +20,9 @@ namespace _16
             shield = 0;
         }
 
-        public void PrintPlayerNames()
+        public void PrintPlayerName()
         {
-
+            Console.WriteLine(this.Name);
         }
 
     }

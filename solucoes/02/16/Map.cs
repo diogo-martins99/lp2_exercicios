@@ -5,22 +5,25 @@ namespace _16
 {
     public class Map
     {
-        public string Name { get; set; }
-        protected string Filename { get; set; }
+        public string Name { get; }
+        protected string Filename { get; }
+        List<Player> players; 
 
-     //   Player player = new Player(1, "joaquim");
-
-        public Map(string Name, string Filename)
+        public Map()
         {
-            this.Name = Name;
-            this.Filename = Filename;
+            players = new List<Player>();
+            players.Add(new Player(1, "Manel"));
+            players.Add(new Player(2, "Rita"));
+            players.Add(new Player(3, "Sara"));
+            players.Add(new Player(4, "Joaquim"));
+
         }
 
         public void PrintPlayerNames()
         {
 
             foreach (Player player in players)
-                Console.WriteLine(player.Name);
+                player.PrintPlayerName();
         }
 
 
