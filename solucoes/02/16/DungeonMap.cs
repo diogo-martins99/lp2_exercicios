@@ -1,9 +1,14 @@
 ﻿
 namespace _16
 {
-    class DungeonMap : Map
+    public class DungeonMap : Map
     {
-        public int NumberOfDungeons { get; set; }
+        public int NumberOfDungeons { get;}
+
+        public DungeonMap(int dungNumber) : base()
+        {
+            this.NumberOfDungeons = dungNumber;
+        }
 
     }
 }

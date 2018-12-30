@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _16
 {
@@ -6,14 +7,30 @@ namespace _16
     {
         internal static int gamesPlayed;
         private int numberOfPlayers;
+        Map map;
 
-        Map map = new Map();
+        public Game(params string[] Name)
+        {
+            Random random = new Random();
+
+            random.Next(0, 1);
+            if (random.Next() == 1)
+            {
+                map = new DungeonMap(1);
+            }
+            else
+            {
+                map = new OpenWorldMap(40, 40);
+            }
+            
+           map.AddPlayer(Name);
+
+        }
 
         internal void GameLoop()
         {
-            Console.WriteLine($"Foram jogados {gamesPlayed = 3} jogos com " +
-                $"{numberOfPlayers = 4} jogadores, os seus nomes são: ");
             map.PrintPlayerNames();
+
         }
     }
 }

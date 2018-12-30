@@ -2,17 +2,15 @@
 
 namespace _16
 {
-    class Player
-
+    public class Player
     {
 
         public int ID { get; }
         public string Name { get; }
-        private double health;
-        private double shield;
+        private readonly double health;
+        private readonly double shield;
 
         public Player(int ID, string Name)
-
         {
             this.ID = ID;
             this.Name = Name;
@@ -24,6 +22,5 @@ namespace _16
         {
             Console.WriteLine(this.Name);
         }
-
     }
 }
