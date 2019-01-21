@@ -1,13 +1,16 @@
-﻿
-namespace _16
+﻿namespace _16
 {
+    // Classe que cria um mapa de masmorras e indica o número de masmorras que 
+    // cria.
     public class DungeonMap : Map
     {
-        public int NumberOfDungeons { get;}
+        // Propriedade que indica o número de masmorras
+        public int NumberOfDungeons { get; }
 
-        public DungeonMap(int dungNumber) : base()
+        // Constructor da classe que inicia com x número de masmorras
+        public DungeonMap(int dungeonNumber) : base()
         {
-            this.NumberOfDungeons = dungNumber;
+            NumberOfDungeons = dungeonNumber;
         }
 
     }
