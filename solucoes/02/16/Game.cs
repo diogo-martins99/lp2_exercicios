@@ -6,11 +6,11 @@ namespace _16
     public class Game
     {
         internal static int gamesPlayed;
-        private int numberOfPlayers = 0;
+        private int numberOfPlayers;
         public Map map;
 
         // Constructor da classe que cria um jogo
-        public Game(int numberOfPlayers, params string[] Name)
+        public Game(params string[] names)
         {
             Random random = new Random();
 
@@ -27,15 +27,20 @@ namespace _16
                 map = new OpenWorldMap(40, 40);
                 map.Name = "Exodus";
             }
+            // Iguala o tamanho do array ao tamanho total dos jogadores
+            numberOfPlayers = names.Length;
+            gamesPlayed = random.Next(0, 25);
             for (int i = 0; i < numberOfPlayers; i++)
-                map.AddPlayer(i, Name[0+i]);
-
+                map.AddPlayer(i, names[i]);
+            
+           
         }
 
         // Método que efectua o ciclo de jogo
         internal void GameLoop()
         {
             map.PrintPlayerNames();
+            Console.WriteLine("Foram jogados : " + gamesPlayed);
         }
     }
 }

@@ -8,11 +8,11 @@ namespace _16
     {
         public string Name { get; set; }
         protected string Filename { get; }
-        private List<Player> players = new List<Player>();
+        private List<Player> players;
 
         public Map()
         {
-
+            players = new List<Player>();
         }
 
         // Método que imprime o nome de cada jogador
