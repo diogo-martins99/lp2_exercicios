@@ -8,8 +8,8 @@ namespace _16
         // Propriedades que indicam o ID, nome, vida e escudo do jogador
         public int ID { get; }
         public string Name { get; }
-        private readonly double health;
-        private readonly double shield;
+        private double health;
+        private double shield;
 
         // Constructor que cria o jogadaor com status base
         public Player(int ID, string Name)
