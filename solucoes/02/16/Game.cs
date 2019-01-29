@@ -5,7 +5,7 @@ namespace _16
     // Classe responsável por criar o "jogo"
     public class Game
     {
-        internal static int gamesPlayed;
+        internal static int gamesPlayed = 0;
         private readonly int numberOfPlayers;
         public Map map;
 
@@ -29,7 +29,7 @@ namespace _16
             }
             // Iguala o tamanho do array ao tamanho total dos jogadores
             numberOfPlayers = names.Length;
-            gamesPlayed++;
+            //gamesPlayed++;
             for (int i = 0; i < numberOfPlayers; i++)
                 map.AddPlayer(i, names[i]);
             
@@ -39,7 +39,7 @@ namespace _16
         // Método que efectua o ciclo de jogo
         internal void GameLoop()
         {
-            //gamesPlayed++;
+            gamesPlayed++;
             map.PrintPlayerNames();
             Console.WriteLine("Foram jogados : " + gamesPlayed);
         }
