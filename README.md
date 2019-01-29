@@ -135,8 +135,7 @@ O código associado aos exercícios é disponibilizado através da licença
 ## Metadados
 
 *   Autor: [Nuno Fachada][]
-*   Colaboradores:
-    De preferência, muitos
+*   [Colaboradores](https://github.com/VideojogosLusofona/lp2_exercicios/graphs/contributors)
 *   Curso: [Licenciatura em Videojogos][lv]
 *   Instituição: [Universidade Lusófona de Humanidades e Tecnologias][ULHT]
 
